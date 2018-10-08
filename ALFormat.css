@@ -1,0 +1,43 @@
+body{
+	background: white;
+	color: #3ae8ff;
+	font-family: Century Gothic;
+}
+
+h1 {
+	background: #2bd5ff;
+	color: white;
+	padding: 5px 0px 5px 10px;
+	font-size: 35px;
+}
+
+p {
+	background: white;
+	color: black;
+	font-family: Century Gothic;
+}
+
+.two{
+	height: 20px;
+}
+
+.description {
+}
+
+a {
+	background: black;
+	text-decoration: none;
+	border-color: #2bd5ff;
+	border-width: 2px;
+	margin: 2px;
+	font-size: 18px;
+	color: white;
+	font-family: Century Gothic;
+	padding: 5px 40px 5px 40px;
+}
+
+input {
+	margin: 2px;
+	text-align-last: 
+}
+
