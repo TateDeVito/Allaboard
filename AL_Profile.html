@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="ALFormat.css">
-<head>
-	<h1><img src="AL_Logo.png">allaboard</h1>
 
+<head>
+	<h1>allaboard
+	<a class="top" href="AL_Home.html">Home</a>
+	<a class="top" href="AL_Profile.html">My Profile</a>
+	<a class="top" href="AL_Rent.html">Rent</a>
+	<a class="top" href="AL_Lend.html">Lend</a>
+	<a class="top" href="AL_About.html">About</a></h1>
 	<title>My Profile</title>
 </head>
-<body>
 
-<center><p class="two"><b>
-	<a href="AL_Profile.html">My Profile</a>
-	<a href="AL_About.html">About</a>
-	<a href="AL_Rent.html">Rent</a>
-	<a href="AL_Lend.html">Lend</a>
-	<a href="AL_Home.html">Home</a>
-	</b>
-</p></center>
+<body>
+	</b></p>
 	<center>
-	<p>A bit about the user</p>
-	Rating <br>
-	Inventory <br> 
+	<br><b>Log in</b><br>
+	<form name="login" onsubmit="return validateForm() ;" method="post">
+	<br>
+	Username <input class="username" type="text" name="user"></input><br> 
+	Password <input class="password" type="password" name="pass"></input><br><br>	
+	<input type="submit" name="submit" value="Log in" onclick="validate()">
+	</form>
+	<br><b><a href="AL_NewMemb.html">New here?</a></b><br> 
 	</center>
 </body>
 </html>
