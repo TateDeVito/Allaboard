@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="ALFormat.css">
-
 <?php
 	include 'AL_Head.php';
 	
 ?>
-
 <body>
 	</b></p>
 	<center>

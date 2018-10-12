@@ -4,4 +4,4 @@
 	<a class="top" href="AL_Rent.php">Rent</a>
 	<a class="top" href="AL_Lend.php">Lend</a>
 	<a class="top" href="AL_About.php">About</a>
-	<a class="top" href="AL_Home.php">College Captains Campaign</a></h1> 
+	<a class="top" href="AL_Col.php">College Captains</a></h1> 
