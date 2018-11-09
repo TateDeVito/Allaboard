@@ -6,6 +6,7 @@
 <title>About</title>
 
 <?php
+
 	include 'AL_Head.php';
 
 ?>
@@ -16,9 +17,19 @@
 
 <body>
 	<center>
-	<p><b>College Captains Campaign: colleges and college users that use the site will be recognized.
-		The first allaboard member from each school will be named Pioneer, and the user with the most activity will be named Captain (both recognized here). The most active, <color ="blue"> captain schools </color> will be recognized each month. </b></p><br>
-		<img src="CollegeCaps.png"> 
+	<b>College Captains Campaign: 
+		The first allaboard member from each college will be named "Pioneer", and the user with the most activity will be named "Captain" (both recognized here). The most active, captain schools will be recognized each month. 
+		</b><br><br>
+			<tr>
+				<td><img src="UVA.png"></td>
+				<td><img src="UPenn.png"></td>
+				<td><img src="W&M.png"></td>
+				<td><img src="UVA.png"></td>
+			</tr>
+			<tr>
+				<th></th>
+			</tr>
+		</table>
 	</center>
 </body>
 </html>
