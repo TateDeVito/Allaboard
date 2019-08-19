@@ -8,23 +8,24 @@
 ?>
 
 </head>
+
 <body>
 
 	<center>
 	<p><b>Fill out item info below to add equipment:</b><br>
-	<form action="LendHandler.php" method="post">
 
-	<!-- Cannot be empty -->
+	<form onchange="itemCheck()" method="post" >
+	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
-	Brand <input type="Text" name="brand"><br> 
-
-	<!-- Cannot be empty -->
-	Item name <input type="Text" name="item"><br>
-	Rent price <input type=number name="rentPrice"><br><br>
-	<input type="submit" value="List" name="list"><br>
+	Brand <input onchange="itemCheck()" type="Text" id="brand"><br>
+	Item name <input type="Text" id="item"><br>
+	Rent price <input type="number" id="rentPrice">
+	<b><p style='color : red' id="error"></p></b>	
+	<input type="submit" value="List" name="list" onsubmit = " return itemCheck()">
 	</form>	
 	</p>
 	</center>
 
+	<script type="text/javascript" src="scripts/LendScript.js"></script>
 </body>
 </html>
