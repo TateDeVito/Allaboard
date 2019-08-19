@@ -19,9 +19,9 @@
 	<!-- Drop down should be a list of companies, and then an Other: -->
 	Brand <input onchange="itemCheck()" type="Text" id="brand"><br>
 	Item name <input type="Text" id="item"><br>
-	Rent price <input type="number" id="rentPrice">
+	Rental price ($) <input type="number" value=20 id="rentPrice">
 	<b><p style='color : red' id="error"></p></b>	
-	<input type="submit" value="List" name="list" onsubmit = " return itemCheck()">
+	<input type="submit" value="List my item" name="list" onsubmit = " return itemCheck()">
 	</form>	
 	</p>
 	</center>
