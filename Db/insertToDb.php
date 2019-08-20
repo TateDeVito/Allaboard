@@ -1,8 +1,8 @@
 <?php
-		require('DB/connectToDb.php');
-
-		if($_SERVER[REQUEST_METHOD] == 'POST') {
+	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
+		require('connectToDb.php');
+
 		// DB format: 
 			// userID (varchar 20)
 			// location (varchar 20)
@@ -11,7 +11,7 @@
 			// price (int)
 			// photo
 
-			// $query = "INSERT into equipmentPool('', '')";
+		// $query = "INSERT into equipmentPool('', '')";
 
-		}
-	?>
+	}
+?>
