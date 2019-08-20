@@ -18,12 +18,23 @@
 	<?php
 		require('Db/connectToDb.php');
 
+		// Queries should match the entries in the search bar on the page
 		$query = "SELECT brand,item,price FROM `$dbname`";
 		$search = $db->prepare($query);
 		$search->execute();
 
-		$resultsArr = $search->fetchAll();
+		$results = $search->fetchAll();
 
+		echo "<center><table>";
+
+		foreach($results as $item) {
+			echo '<td>entry<td>';
+		}
+
+		echo "</table></center>";
+
+		// Close connection
+		$db = null;
 	?>
 
 </body>
