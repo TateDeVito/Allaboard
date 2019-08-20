@@ -31,5 +31,10 @@
 	<!-- Then the newly listed items will be put into a database of listed items -->
 	<!-- Else, flags are given on the page indicating what must be filled out -->
 	<script type="text/javascript" src="scripts/LendScript.js"></script>
+
+	<?php
+		require('insertItemDB.php');
+	?>
+
 </body>
 </html>
