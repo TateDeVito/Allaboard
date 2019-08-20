@@ -13,7 +13,7 @@
     try {
         // PHP Data Objects (PDO's) require a dsn, username, and password
         $db = new PDO($dsn, $username, $pass);
-        // $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo 'Connected to database!';
     }
 

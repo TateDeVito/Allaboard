@@ -5,9 +5,9 @@
 
 		// DB format: 
 			// userID (varchar 20)
-			$userID = "person";
+			$userID = 'userID';
 			// location (varchar 20)
-			$location = "location";
+			$location = 'location';
 			// brand (varchar 30)
 			$brand = $_POST['brand'];
 			// item (varchar 30)
@@ -17,7 +17,7 @@
 			$price = 0;
 			if(!empty($_POST['rent'])) { $price = $_POST['rent']; }
 			// photo
-			$photo = "";
+			$photo = 0;
 
 		echo "<br><br>Adding a <b>" . $brand . " " . $item; 
 		echo "; Price: $" . $price;
@@ -30,18 +30,18 @@
 		// If you are using all columns, then you do not need to specify which cols to 
 		// pull from.
 
-		$insertItem = "INSERT INTO `$dbname` 
-		VALUES($userID,$location,$brand,$item,$price,$photo)";
+		$insertItem = "INSERT INTO `$dbname`(userID,area,brand,item,price,photo)
+		VALUES('$userID','$location','$brand','$item','$price','$photo')";
 
 		echo "<br><br>"; 
 
 		// To run the queries on a PDO, we use the exec() method
 		try {
-			$db->query($insertItem);
+			$db->exec($insertItem);
 			echo 'Successful entry!';
 		}
 
-		catch(PDOException $e) { echo 'Error: ' . $e->getMessage(); }
+		catch(PDOException $e) { echo 'Oh no!: ' . $e->getMessage(); }
 
 		$db = null;
 	}
