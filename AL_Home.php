@@ -14,9 +14,9 @@
 <body>
 
 	<center>
-	<br>
 	<p><img src="Images/AL_Logo.png"></p><br>
-	<b>We welcome a board - allaboard</b>
+	<b>(Moving graphic overlay)</b><br>
+	<b>Welcome to allaboard</b>
 	</center>
 
 </body>
