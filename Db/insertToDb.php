@@ -3,6 +3,8 @@
 		
 		require('connectToDb.php');
 
+		$db = 'equipmentPool';
+
 		// DB format: 
 			// userID (varchar 20)
 			$userID = "person";
@@ -22,7 +24,8 @@
 		echo "<br><br>Adding a <b>" . $brand . " " . $item; 
 		echo "; Price: $" . $price;
 
-		// $query = "INSERT into equipmentPool('', '')";
+		$query = "INSERT INTO `equipmentPool`('userID','location','brand','item','price','photo')
+		VALUES($userID, $location, $brand, $item, $price, $photo)";
 
 	}
 ?>
