@@ -31,7 +31,7 @@
 		// pull from.
 
 		$insertItem = "INSERT INTO `$dbname` 
-		VALUES($userID, $location, $brand, $item, $price, $photo)";
+		VALUES($userID,$location,$brand,$item,$price,$photo)";
 
 		echo "<br><br>"; 
 
