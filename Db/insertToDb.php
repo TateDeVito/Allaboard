@@ -22,20 +22,23 @@
 		echo "<br><br>Adding a <b>" . $brand . " " . $item; 
 		echo "; Price: $" . $price;
 
-		// URL: https://www.w3schools.com/sql/sql_insert.asp
-		// INSERT INTO `DBName` (colq, col2 ...) VALUES ('A', 'B' ...);
-		$insertItem = "INSERT INTO $dbname('userID','location','brand','item','price','photo')
+		// URLs': 1.) https://www.w3schools.com/sql/sql_insert.asp
+		// 2.) https://www.w3schools.com/php/php_mysql_insert.asp
+
+		// "INSERT INTO `DBName` (colq, col2 ...) VALUES ('A', 'B' ...);"
+		// If you are using all columns, then you do not need to specify which cols to 
+		// pull from.
+		$insertItem = "INSERT INTO $dbname
 		VALUES($userID, $location, $brand, $item, $price, $photo)";
 
 		echo "<br><br>"; 
 
-		// Must run the queries on a PDO, not the DB name string
+		// To run the queries on a PDO, we use the exec() method
 		try {
-			$query = $db->prepare($insertItem);
-			$query->execute();
-			echo 'Successful Entry!'; }
+			$db->exec($insertItem);
+			echo 'Successful entry!';
+		}
 
-		catch(Exception $e) {
-			echo 'Error: ' . $e; }
+		catch(PDOException $e) { echo 'Error: ' . $e->getMessage(); }
 	}
 ?>

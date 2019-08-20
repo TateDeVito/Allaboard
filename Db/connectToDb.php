@@ -4,12 +4,14 @@
 <?php
     $host = 'localhost:3306';
     $dbname = 'equipmentpool';
+    $username = 'root';
+    $pass = '';
 
     $dsn = "mysql:hostname=$host;dbname=$dbname";
 
     try {
         // PHP Data Objects (PDO's) require a dsn, username, and password
-        $db = new PDO($dsn, 'root', '');
+        $db = new PDO($dsn, $username, $pass);
         echo 'Connected to database!';
     }
 
@@ -17,5 +19,6 @@
         // Shouts the error message if there is one connecting to the database
         $error = $ex->getMessage();
         echo 'Connection failure: ' . $error;
+        die("Connection terminated");
     }
 ?>
