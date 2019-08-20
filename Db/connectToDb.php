@@ -3,9 +3,9 @@
 
 <?php
     $host = 'localhost:3306';
-    $db = 'equipmentPool';
+    $dbname = 'equipmentPool';
 
-    $dsn = "mysql:hostname=$host;dbname=$db";
+    $dsn = "mysql:hostname=$host;dbname=$dbname";
 
     try {
         // PHP Data Objects (PDO's) require a dsn, username, and password

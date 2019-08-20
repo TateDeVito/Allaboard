@@ -3,8 +3,6 @@
 		
 		require('connectToDb.php');
 
-		$db = 'equipmentPool';
-
 		// DB format: 
 			// userID (varchar 20)
 			$userID = "person";
@@ -24,8 +22,11 @@
 		echo "<br><br>Adding a <b>" . $brand . " " . $item; 
 		echo "; Price: $" . $price;
 
-		$query = "INSERT INTO `equipmentPool`('userID','location','brand','item','price','photo')
+		// URL: https://www.w3schools.com/sql/sql_insert.asp
+		$insertItem = "INSERT INTO `$dbname`('userID','location','brand','item','price','photo')
 		VALUES($userID, $location, $brand, $item, $price, $photo)";
 
+		$query = $db->prepare($insertItem);
+		$query->execute();
 	}
 ?>
