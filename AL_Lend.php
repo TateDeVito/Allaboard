@@ -14,7 +14,7 @@
 	<center>
 	<p><b>Fill out item info below to add equipment:</b><br>
 
-	<form onclick="itemCheck()" method="post" >
+	<form onsubmit="itemCheck()" method="post" >
 	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
 	Brand: <input type="Text" id="brand"><br>
