@@ -44,6 +44,7 @@
 
 		catch(PDOException $e) { echo 'Oh no!: ' . $e->getMessage(); }
 
+		// When finished, close the connection for security
 		$db = null;
 	}
 ?>
