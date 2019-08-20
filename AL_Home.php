@@ -15,7 +15,7 @@
 
 	<center>
 	<br>
-	<p><img src="AL_Logo.png"></p><br>
+	<p><img src="Images/AL_Logo.png"></p><br>
 	<b>We welcome a board - allaboard</b>
 	</center>
 
