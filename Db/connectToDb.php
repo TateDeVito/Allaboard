@@ -3,7 +3,7 @@
 
 <?php
     $host = 'localhost:3306';
-    $dbname = 'equipmentPool';
+    $dbname = 'equipmentpool';
 
     $dsn = "mysql:hostname=$host;dbname=$dbname";
 

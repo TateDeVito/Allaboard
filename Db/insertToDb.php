@@ -23,10 +23,19 @@
 		echo "; Price: $" . $price;
 
 		// URL: https://www.w3schools.com/sql/sql_insert.asp
-		$insertItem = "INSERT INTO `$dbname`('userID','location','brand','item','price','photo')
+		// INSERT INTO `DBName` (colq, col2 ...) VALUES ('A', 'B' ...);
+		$insertItem = "INSERT INTO $dbname('userID','location','brand','item','price','photo')
 		VALUES($userID, $location, $brand, $item, $price, $photo)";
 
-		$query = $db->prepare($insertItem);
-		$query->execute();
+		echo "<br><br>"; 
+
+		// Must run the queries on a PDO, not the DB name string
+		try {
+			$query = $db->prepare($insertItem);
+			$query->execute();
+			echo 'Successful Entry!'; }
+
+		catch(Exception $e) {
+			echo 'Error: ' . $e; }
 	}
 ?>
