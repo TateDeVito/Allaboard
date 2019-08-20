@@ -18,5 +18,4 @@
         $error = $ex->getMessage();
         echo 'Connection failure: ' . $error;
     }
-
 ?>

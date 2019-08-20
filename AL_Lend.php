@@ -33,7 +33,7 @@
 	<script type="text/javascript" src="scripts/LendScript.js"></script>
 
 	<?php
-		require('insertItemDB.php');
+		require('DB/insertItemDB.php');
 	?>
 
 </body>
