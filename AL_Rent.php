@@ -12,7 +12,6 @@
 	<br>
 	<p><b>Search (by brand, name, location) </b><input type="Text" name="search" size="50"><br>
 	</p>
-	</center>
 	
 	<!-- List the results of a search directly on the page -->
 	<?php
@@ -25,17 +24,19 @@
 
 		$results = $search->fetchAll();
 
-		echo "<center><table>";
+		echo "<br><br><table>";
 
 		foreach($results as $item) {
-			echo '<td>entry<td>';
+			echo '<td>' . $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>';
 		}
 
-		echo "</table></center>";
+		echo "</table>";
 
 		// Close connection
 		$db = null;
 	?>
+
+	</center>
 
 </body>
 </html>
