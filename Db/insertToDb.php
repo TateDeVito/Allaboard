@@ -42,5 +42,7 @@
 		catch(PDOException $e) { echo 'Error: ' . $e->getMessage(); }
 
 		$db = null;
+
+		// Insertions still not going through - look into if the server is correct
 	}
 ?>

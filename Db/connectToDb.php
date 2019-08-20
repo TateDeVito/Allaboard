@@ -2,7 +2,7 @@
 <!-- submit the equipment to the larger pool of available equipment -->
 
 <?php
-    $host = 'localhost:3306';
+    $host = '127.0.0.1';
     $dbname = 'equipmentpool';
     $username = 'root';
     $pass = '';
