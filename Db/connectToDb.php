@@ -10,7 +10,7 @@
     try {
         // PHP Data Objects (PDO's) require a dsn, username, and password
         $db = new PDO($dsn, 'root', '');
-        // echo 'Connected to database!';
+        echo 'Connected to database!';
     }
 
     catch(PDOException $ex) {
