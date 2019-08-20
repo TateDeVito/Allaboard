@@ -14,7 +14,7 @@
 	<center>
 	<p><b>Fill out item info below to add equipment:</b><br>
 
-	<form onsubmit="itemCheck()" method="post" >
+	<form onsubmit="insertToDb.php" method="post" >
 	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
 	Brand: <input type="Text" id="brand"><br>
@@ -31,24 +31,6 @@
 	<!-- Then the newly listed items will be put into a database of listed items -->
 	<!-- Else, flags are given on the page indicating what must be filled out -->
 	<script type="text/javascript" src="scripts/LendScript.js"></script>
-
-	<?php
-		require('DB/connectToDb.php');
-
-		if($_SERVER[REQUEST_METHOD] == 'POST') {
-		
-		// DB format: 
-			// userID (varchar 20)
-			// location (varchar 20)
-			// brand (varchar 30)
-			// item (varchar 30)
-			// price (int)
-			// photo
-
-			// $query = "INSERT into equipmentPool('', '')";
-
-		}
-	?>
 
 </body>
 </html>
