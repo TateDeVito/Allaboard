@@ -17,8 +17,12 @@
 <body>
 	<center>
 	<br>
-	<p>A little about me/us (do last)</p><br> 
-	Allaboard
+	To add: 
+	<ol>
+	<li>Bio</li>
+	<li>Mission</li>
+	<li>Cool images</li>
+	<br>
 	</center>
 </body>
 </html>
