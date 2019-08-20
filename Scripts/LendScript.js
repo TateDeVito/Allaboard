@@ -10,7 +10,7 @@ function itemCheck() {
         if(brand.value == "")  { brand.style = 'border-color : red' }
         if(item.value == "")  { item.style = 'border-color : red' }
 
-        error.innerHTML = "Form missing element(s)";
+        error.textContent = "Form missing element(s)";
         brand.innerHTML = brand.value;
         brand.innerHTML = brand.value;
 

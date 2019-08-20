@@ -14,12 +14,12 @@
 	<center>
 	<p><b>Fill out item info below to add equipment:</b><br>
 
-	<form action="Db/insertToDb.php" method="post">
+	<form action="Db/insertToDb.php" method="POST">
 	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
-	Brand: <input type="Text" id="brand"><br>
-	Item name: <input type="Text" id="item"><br>
-	Rental price ($): <input type="number" value=20 id="rentPrice"><br>
+	Brand: <input type="textbox" id="brand" name="brand"><br>
+	Item name: <input type="textbox" id="item" name="item"><br>
+	Rental price ($): <input type="number" value=20 id="rent" name="rent"><br>
 	<br> Photos upload: 
 	<b><p style='color : red' id="error"></p></b>	
 	<!-- Button triggers JavaScript form validation -->
