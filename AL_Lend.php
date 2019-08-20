@@ -22,6 +22,7 @@
 	Rental price ($): <input type="number" value=20 id="rentPrice"><br>
 	<br> Photos upload: 
 	<b><p style='color : red' id="error"></p></b>	
+	<!-- Button triggers JS form validation -->
 	<input type="submit" value="List my item" id="list" onclick = "return itemCheck()">
 	</form>	
 	</p>
