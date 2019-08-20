@@ -19,7 +19,7 @@
 	<!-- Drop down should be a list of companies, and then an Other: -->
 	Brand: <input type="textbox" id="brand" name="brand"><br>
 	Item name: <input type="textbox" id="item" name="item"><br>
-	Rental price ($): <input type="number" value=20 id="rent" name="rent"><br>
+	Rental price ($): <input type="number" value=0 id="rent" name="rent"><br>
 	<br> Photos upload: 
 	<b><p style='color : red' id="error"></p></b>	
 	<!-- Button triggers JavaScript form validation -->

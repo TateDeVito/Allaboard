@@ -12,10 +12,15 @@
 			$brand = $_POST['brand'];
 			// item (varchar 30)
 			$item = $_POST['item'];
-			// price (int)
-			$price = $_POST['rent'];
+			// price (varchar 30)
+			// the reason for a varchar is for a name your price element
+			$price = "???";
+			if(!empty($_POST['rent'])) { $price = $_POST['rent']; }
 			// photo
 			$photo = "";
+
+		echo "<br><br>Adding a <b>" . $brand . " " . $item; 
+		echo "; Price: $" . $price;
 
 		// $query = "INSERT into equipmentPool('', '')";
 
