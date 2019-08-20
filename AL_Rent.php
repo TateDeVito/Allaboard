@@ -18,8 +18,11 @@
 	<?php
 		require('Db/connectToDb.php');
 
-		$search = "SELECT brand,item,price FROM `$dbname`";
-		
+		$query = "SELECT brand,item,price FROM `$dbname`";
+		$search = $db->prepare($query);
+		$search->execute();
+
+		$resultsArr = $search->fetchAll();
 
 	?>
 
