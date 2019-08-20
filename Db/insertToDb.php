@@ -25,6 +25,7 @@
 		// URLs': 
 		// 1.) https://www.w3schools.com/sql/sql_insert.asp
 		// 2.) https://www.w3schools.com/php/php_mysql_insert.asp
+		// 3.) https://www.zentut.com/php-pdo/pdo-inserting-data-into-tables/
 
 		// "INSERT INTO `DBName` (colq, col2 ...) VALUES ('A', 'B' ...);"
 		// If you are using all columns, then you do not need to specify which cols to 
