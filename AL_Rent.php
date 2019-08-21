@@ -22,6 +22,7 @@
 
 			$search = $_POST['search'];
 
+			try {
 			// Queries should match the entries in the search bar on the page
 			$query = "SELECT brand, item, price FROM `$dbname`
 			WHERE brand='$search' or item='$search'";
@@ -32,10 +33,14 @@
 
 			echo "<br><table width=70%>";
 			foreach($results as $item) {
-				echo '<td style="background-color:#2bd5ff; border-width: 5px; text-align: center;
-				padding: 15px">' 
+				echo '<td>' 
 				. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>'; }
 			echo "</table>";
+			}
+
+			catch(PDOException $e) {
+				echo "Sorry that didn't work!";
+			}
 
 			// Close connection
 			$db = null;

@@ -25,10 +25,10 @@ p {
 a {
 	text-decoration: none;
 	margin: 2px;
-	font-size: 18px;
 	color: white;
 	font-family: Century Gothic;
 	padding: 5px 5px 5px 5px;
+	font-size: 18px;
 }
 
 img {
@@ -39,6 +39,14 @@ img {
 input {
 	margin-bottom: 15px;
 	font-family: Century Gothic;
+}
+
+td {
+	background-color:#2bd5ff; 
+	border-width: 5px; 
+	text-align: center;			
+	padding: 15px;
+	font-size: 10px;
 }
 
 /* Classes */
