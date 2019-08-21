@@ -14,7 +14,7 @@
 
 	<center>
 	<br>
-	<p><img src="Images/AL_Logo.png"></p><br>
+	<p><img src="Images/AL_Logo.png"></p>
 	<b>(Moving graphic overlay)</b><br>
 	<b>Welcome to allaboard</b>
 	</center>
