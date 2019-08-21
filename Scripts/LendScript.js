@@ -7,12 +7,20 @@ var error = document.getElementById('error');
 // A. Neither the brand and item are empty
 // B. No apostraphe's included in the listing
 function itemCheck() {
+
     if(brand.value == "" || item.value == "") {
 
         if(brand.value == "")  { brand.style = 'border-color : red' }
         if(item.value == "")  { item.style = 'border-color : red' }
         error.textContent = "Form missing element(s)";
 
+        // return false;
+    }
+
+    // Ultimately, functionality for this will need to come in, but for now
+    // it is causing failure
+    else if(brand.value.includes("'")) {
+        error.textContent = "Apostraphe";        
         return false;
     }
 }   
