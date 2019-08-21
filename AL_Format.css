@@ -58,5 +58,6 @@ input {
 
 .biglabel {
 	font-size: 50px;
+	/* Will eventually be white, but for visibility now leave black */
 	/* color: white; */
 }
