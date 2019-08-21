@@ -10,10 +10,13 @@
 ?>
 
 </header>
-<body>
+<!-- Background should be a moving graphic of snowboarders -->
+<!-- URLs -->
+<!-- 1.) https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+<!-- 2.) https://www.w3schools.com/tags/att_body_background.asp -->
 
-	<!-- Video playing behind -->
-	<!-- URL: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+<body background=#>
+
 	<!-- <video autoplay muted loop id="rideFilm">
 	<source src=# type="video/mp4">
 	</video> -->
