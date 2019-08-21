@@ -23,8 +23,8 @@
 
 	<center>
 	<br>
-	<p><img src="Images/AL_Logo.png"></p>
-	<b><p class="biglabel">allaboard<p></b>
+	<img src="Images/AL_Logo.png">
+	<br><br><b><div class="biglabel">allaboard</div></b>
 	</center>
 
 </body>
