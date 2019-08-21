@@ -4,26 +4,26 @@ var item = document.getElementById('item');
 var error = document.getElementById('error');
 
 // Form conditions
-// A. Neither the brand and item are empty
-// B. No apostraphe's included in the listing
 function itemCheck() {
 
-    if(brand.value == "" || item.value == "") {
+    error.textContent = "";
 
-        if(brand.value == "")  { brand.style = 'border-color : red' }
-        if(item.value == "")  { item.style = 'border-color : red' }
-        error.textContent = "Form missing element(s)";
-
-        brand.innerHTML = brand;
-        item.innerHTML = item;
-
+    // No apostraphes allowed
+    if(brand.value.includes("'") || item.value.includes("'")) {
+        // if(brand.value.includes("'")) { brand.value = brand.value.replace("'",""); }
+        // if(item.value.includes("'")) { item.value = item.value.replace("'",""); }
+        error.textContent = "Please replace apostraphes (') with empty spaces";        
         return false;
     }
 
-    // Ultimately, functionality for this will need to come in, but for now
-    // it is causing failure
-    // else if(brand.value.includes(" ")) {
-    //     error.textContent = "Apostraphe";        
-    //     return false;
-    // }
+    // No empties allowed
+    if(brand.value == "" || item.value == "") {
+        if(brand.value == "")  { brand.style = 'border-color : red' }
+        if(item.value == "")  { item.style = 'border-color : red' }
+        error.textContent = "Form missing element(s)";
+        return false;
+    }
+
+    return true;
+
 }   
