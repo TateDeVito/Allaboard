@@ -26,8 +26,7 @@
 			// photo
 			$photo = 0;
 
-		echo "<br><br>Adding a <b>" . $brand . " " . $item; 
-		echo "; Price: $" . $price;
+		echo "<br><br>Attempting lend...";
 
 		// URLs': 
 		// 1.) https://www.w3schools.com/sql/sql_insert.asp
@@ -46,7 +45,8 @@
 		// To run the queries on a PDO, we use the exec() method
 		try {
 			$db->exec($insertItem);
-			echo 'Successfully added!';
+			echo '<b>Successfully added a ' . $brand . " " . $item . " to equipment pool.</b>";
+			echo '<br><br>Thank you for your submission!';
 		}
 
 		catch(PDOException $e) { echo 'Oh no!: ' . $e->getMessage(); }
