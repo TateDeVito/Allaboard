@@ -14,9 +14,9 @@
 
 	<!-- Video playing behind -->
 	<!-- URL: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
-	<video autoplay muted loop id="rideFilm">
+	<!-- <video autoplay muted loop id="rideFilm">
 	<source src=# type="video/mp4">
-	</video>
+	</video> -->
 
 	<center>
 	<br>
