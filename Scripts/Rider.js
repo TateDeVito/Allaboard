@@ -1,3 +1,5 @@
+// General class outline...
+
 var Rider;
 // 	string user; //Unique, primary identifier
 // 	String first;
