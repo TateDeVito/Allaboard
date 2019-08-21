@@ -30,7 +30,7 @@
 			$search->execute();
 			$results = $search->fetchAll();
 
-			echo "<br><table>";
+			echo "<br><table width=70%>";
 			foreach($results as $item) {
 				echo '<td style="background-color:#2bd5ff; border-width: 5px; text-align: center;
 				padding: 15px">' 

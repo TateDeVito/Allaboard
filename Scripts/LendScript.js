@@ -14,13 +14,16 @@ function itemCheck() {
         if(item.value == "")  { item.style = 'border-color : red' }
         error.textContent = "Form missing element(s)";
 
+        brand.innerHTML = brand;
+        item.innerHTML = item;
+
         return false;
     }
 
     // Ultimately, functionality for this will need to come in, but for now
     // it is causing failure
-    else if(brand.value.includes(" ")) {
-        error.textContent = "Apostraphe";        
-        return false;
-    }
+    // else if(brand.value.includes(" ")) {
+    //     error.textContent = "Apostraphe";        
+    //     return false;
+    // }
 }   

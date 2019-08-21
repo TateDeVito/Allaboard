@@ -14,7 +14,7 @@
 
 	<div class="forms"><b>Fill out item info below to add equipment:</b></div>
 
-	<form action="insertToDb.php" class="forms" method="POST">
+	<form class="forms" action="insertToDb.php" onclick="return itemCheck()" method="POST">
 	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
 
