@@ -72,7 +72,11 @@ input {
 }
 
 .biglabel {
-	font-size: 50px;
-	background-color: transparent;
-	color: whitesmoke;
+	font-size: 80px;
+	color: white;
+	
+	/* If you ever want to do gradient text */
+	/* background: -webkit-linear-gradient(whitesmoke, orangered);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
 }
