@@ -13,13 +13,6 @@ function itemCheck() {
         if(item.value == "")  { item.style = 'border-color : red' }
         error.textContent = "Form missing element(s)";
 
-        return false; }
-
-    if(brand.value.includes("m")){
-
-        error.textContent = "m";
-
-        return false; }
-
-    else { return true; }
+        return false;
+    }
 }   
