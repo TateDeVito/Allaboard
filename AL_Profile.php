@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="ALFormat.css">
+<link rel="stylesheet" type="text/css" href="AL_Format.css">
 <?php
 	include 'AL_Head.php';
 	
