@@ -19,8 +19,12 @@
 		require('Db/connectToDb.php');
 
 		if($_SERVER['REQUEST_METHOD'] == 'POST') { 
+
+			$search = $_POST['search'];
+
 			// Queries should match the entries in the search bar on the page
-			$query = "SELECT brand, item, price FROM `$dbname`";
+			$query = "SELECT brand, item, price FROM `$dbname`
+			WHERE brand='$search' or item='$search'";
 			$search = $db->prepare($query);
 			$search->execute();
 
