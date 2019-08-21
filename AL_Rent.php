@@ -25,6 +25,7 @@
 			// Queries should match the entries in the search bar on the page
 			$query = "SELECT brand, item, price FROM `$dbname`
 			WHERE brand='$search' or item='$search'";
+			
 			$search = $db->prepare($query);
 			$search->execute();
 
