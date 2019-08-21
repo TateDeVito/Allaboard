@@ -12,11 +12,16 @@
 </header>
 <body>
 
+	<!-- Video playing behind -->
+	<!-- URL: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
+	<video autoplay muted loop id="rideFilm">
+	<source src=# type="video/mp4">
+	</video>
+
 	<center>
 	<br>
 	<p><img src="Images/AL_Logo.png"></p>
-	<!-- <b>(Moving graphic overlay)</b><br> -->
-	<b><p>allaboard<p></b>
+	<b><p class="biglabel">allaboard<p></b>
 	</center>
 
 </body>
