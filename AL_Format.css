@@ -31,6 +31,11 @@ a {
 	padding: 5px 5px 5px 5px;
 }
 
+img {
+	/* Attempting to make background transparent on all images */
+	background: none;
+}
+
 input {
 	margin-bottom: 15px;
 	font-family: Century Gothic;
