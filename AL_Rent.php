@@ -24,10 +24,11 @@
 
 		$results = $search->fetchAll();
 
-		echo "<br><br><table>";
+		echo "<br><table>";
 
 		foreach($results as $item) {
-			echo '<td>' . $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>';
+			echo '<td style="color:#2bd5ff; padding-left:50px">' 
+			. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>';
 		}
 
 		echo "</table>";
