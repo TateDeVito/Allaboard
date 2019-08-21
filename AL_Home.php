@@ -15,7 +15,7 @@
 <!-- 1.) https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
 <!-- 2.) https://www.w3schools.com/tags/att_body_background.asp -->
 
-<body background=#>
+<body background="Images/testImage.jpg">
 
 	<!-- <video autoplay muted loop id="rideFilm">
 	<source src=# type="video/mp4">
