@@ -10,32 +10,35 @@
 
 	<center>
 	<br>
-	<p><b>Search (by brand, name, location) </b><input type="Text" name="search" size="50"><br>
-	</p>
+	<form method="POST">
+	<p><b>Search (by brand or item name) </b><input type="textbox" name="search" size="50">
+	<input type="submit" value="search"></p>
 	
 	<!-- List the results of a search directly on the page -->
 	<?php
 		require('Db/connectToDb.php');
 
-		// Queries should match the entries in the search bar on the page
-		$query = "SELECT brand,item,price FROM `$dbname`";
-		$search = $db->prepare($query);
-		$search->execute();
+		if($_SERVER['REQUEST_METHOD'] == 'POST') { 
+			// Queries should match the entries in the search bar on the page
+			$query = "SELECT brand, item, price FROM `$dbname`";
+			$search = $db->prepare($query);
+			$search->execute();
 
-		$results = $search->fetchAll();
+			$results = $search->fetchAll();
 
-		echo "<br><table>";
+			echo "<br><table>";
 
-		foreach($results as $item) {
-			echo '<td style="background-color:#2bd5ff; border-width: 5px; text-align: center;
-			padding: 15px">' 
-			. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>';
+			foreach($results as $item) {
+				echo '<td style="background-color:#2bd5ff; border-width: 5px; text-align: center;
+				padding: 15px">' 
+				. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>';
+			}
+
+			echo "</table>";
+
+			// Close connection
+			$db = null;
 		}
-
-		echo "</table>";
-
-		// Close connection
-		$db = null;
 	?>
 
 	</center>
