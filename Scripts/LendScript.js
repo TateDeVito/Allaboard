@@ -14,7 +14,7 @@ function itemCheck() {
         if(item.value == "")  { item.style = 'border-color : red' }
         error.textContent = "Form missing element(s)";
 
-        // return false;
+        return false;
     }
 
     // Ultimately, functionality for this will need to come in, but for now
