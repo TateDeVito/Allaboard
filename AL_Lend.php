@@ -23,7 +23,7 @@
 	<br> Photos upload: 
 	<b><p style='color : red' id="error"></p></b>	
 	<!-- Button triggers JavaScript form validation -->
-	<input type="submit" value="List my item" id="list" onclick="return itemCheck()">
+	<input class="blackbtn" type="submit" value="List my item" id="list" onclick="return itemCheck()">
 	</form>	
 
 	</p>
