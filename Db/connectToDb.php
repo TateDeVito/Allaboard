@@ -1,5 +1,6 @@
-<!-- The purpose of this page is to read validated lend requests and -->
-<!-- submit the equipment to the larger pool of available equipment -->
+
+<!-- Backend page to establish connection to the SQL database -->
+<!-- To do: setup privacy -->
 
 <?php
     $host = 'localhost';

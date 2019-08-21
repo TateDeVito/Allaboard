@@ -13,7 +13,7 @@
 	<br>
 	Username <input class="username" type="text" name="user"></input><br> 
 	Password <input class="password" type="password" name="pass"></input><br><br>	
-	<input type="submit" name="submit" value="Log in" onclick="validate()">
+	<input class="blackbtn" type="submit" name="submit" value="Log in" onclick="validate()">
 	</form>
 	<br><b><a href="AL_NewMemb.html">New here?</a></b><br> 
 	</center>

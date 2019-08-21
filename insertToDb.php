@@ -2,11 +2,13 @@
 <html>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
 <body>
+<center>
 
 <?php
+
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
-		require('connectToDb.php');
+		require('Db/connectToDb.php');
 
 		// DB format: 
 			// userID (varchar 20)
@@ -44,7 +46,7 @@
 		// To run the queries on a PDO, we use the exec() method
 		try {
 			$db->exec($insertItem);
-			echo 'Successful entry!';
+			echo 'Successfully added!';
 		}
 
 		catch(PDOException $e) { echo 'Oh no!: ' . $e->getMessage(); }
@@ -52,7 +54,14 @@
 		// When finished, close the connection for security
 		$db = null;
 	}
+
+	echo '</body>';
+	echo '</html>';
 ?>
 
+<br><br>
+<input class="bigbluebtn" type="submit" value="Take me home" onclick="window.location.replace('AL_Home.php')">
+
+</center>
 </body>
 </html>

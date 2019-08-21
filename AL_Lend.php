@@ -14,7 +14,7 @@
 
 	<div class="forms"><b>Fill out item info below to add equipment:</b></div>
 
-	<form action="Db/insertToDb.php" class="forms" method="POST">
+	<form action="insertToDb.php" class="forms" method="POST">
 	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
 
@@ -22,7 +22,7 @@
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
 	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent"><br>
-	<br> Photos upload: 
+	Photos upload: 	<!-- To add in -->
 	<b><p style='color : red' id="error"></p></b>	
 	<!-- Button triggers JavaScript form validation -->
 	<input class="blackbtn" type="submit" value="List my item" id="list" onclick="return itemCheck()">
