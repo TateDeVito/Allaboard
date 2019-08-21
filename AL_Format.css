@@ -1,3 +1,6 @@
+
+/* HTML elements */
+
 body{
 	background: white;
 	color: black;
@@ -32,6 +35,8 @@ input {
 	margin: 2px;
 	font-family: Century Gothic;
 }
+
+/* Classes */
 
 .blackbtn {
 	color: white; 
