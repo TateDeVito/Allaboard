@@ -27,7 +27,8 @@
 		echo "<br><table>";
 
 		foreach($results as $item) {
-			echo '<td style="color:#2bd5ff; padding-left:50px">' 
+			echo '<td style="background-color:#2bd5ff; border-width: 5px; text-align: center;
+			padding: 15px">' 
 			. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>';
 		}
 
