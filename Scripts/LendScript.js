@@ -19,7 +19,7 @@ function itemCheck() {
 
     // Ultimately, functionality for this will need to come in, but for now
     // it is causing failure
-    else if(brand.value.includes("'")) {
+    else if(brand.value.includes(" ")) {
         error.textContent = "Apostraphe";        
         return false;
     }

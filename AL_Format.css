@@ -46,6 +46,8 @@ input {
 	font-weight: bold; 
 	border: none; 
 	padding: 5px;
+	position: relative;
+	left: 200px;
 }
 
 .bigbluebtn {
@@ -54,6 +56,12 @@ input {
 	font-size: 50px;
 	font-weight: bold;
 	border: none;
+}
+
+.forms {
+	/* position: relative; */
+	padding-left: 230px;
+	padding-top: 10px;
 }
 
 .twenty {

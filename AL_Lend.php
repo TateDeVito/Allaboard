@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="ALFormat.css">
+<link rel="stylesheet" type="text/css" href="AL_Format.css">
 <head>
 <!-- <script type="text/javascript" src="scripts/LendScript.js"></script> -->
 
@@ -12,12 +12,13 @@
 
 <body>
 
-	<center>
-	<p><b>Fill out item info below to add equipment:</b><br>
+	<div class="forms"><b>Fill out item info below to add equipment:</b></div>
 
-	<form action="Db/insertToDb.php" method="POST">
+	<form action="Db/insertToDb.php" class="forms" method="POST">
 	<!-- Neither brand nor item can be empty -->
 	<!-- Drop down should be a list of companies, and then an Other: -->
+
+	<!-- Should align this within the page -->
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
 	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent"><br>
@@ -28,7 +29,6 @@
 	</form>	
 
 	</p>
-	</center>
 
 	<!-- If the form successfully makes it through the validation form -->
 	<!-- Then the newly listed items will be put into a database of listed items -->
