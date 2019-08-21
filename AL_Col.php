@@ -6,9 +6,7 @@
 <title>About</title>
 
 <?php
-
 	include 'AL_Head.php';
-
 ?>
 
 </header>

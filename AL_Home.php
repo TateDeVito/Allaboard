@@ -7,7 +7,6 @@
 
 <?php
 	include 'AL_Head.php';
-	
 ?>
 
 </header>

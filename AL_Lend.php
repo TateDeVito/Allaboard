@@ -25,6 +25,7 @@
 	<!-- Button triggers JavaScript form validation -->
 	<input type="submit" value="List my item" id="list" onclick="return itemCheck()">
 	</form>	
+
 	</p>
 	</center>
 
