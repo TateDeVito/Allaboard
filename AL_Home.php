@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="AL_Format.css">
-
 <header>
-<title>About</title>
-
+<link rel="stylesheet" type="text/css" href="AL_Format.css">
+<title>Home</title>
 <?php
 	include 'AL_Head.php';
 ?>
-
 </header>
+
 <!-- Background should be a moving graphic of snowboarders -->
 <!-- URLs -->
 <!-- 1.) https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->

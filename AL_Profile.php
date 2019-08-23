@@ -2,11 +2,11 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
-</head>
 <?php
 	include 'AL_Head.php';
-	
 ?>
+</head>
+
 <body>
 	</b></p>
 	<form class="forms" name="login" method="post">
