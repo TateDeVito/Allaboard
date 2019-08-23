@@ -23,9 +23,10 @@
 	<select onchange="other()" class="twenty" style="height: 30px; margin-bottom: 15px" id="type">
 	<option>Ski</option><option>Snowboard</option><option>Surf</option><option>Other</option>
 	</select><br>
-	<div id="ifOther"></div>
+	<div style="color: grey" id="ifOther"></div>
 	<script> 
-		var type = document.getElementById('type');		
+		var type = document.getElementById('type');	
+		// Javascript function to put in items that are of nontraditional types 
 		function other() {
 			if(type.value == 'Other') { document.getElementById('ifOther').innerHTML = 
 			'Give other type here: <input class="twenty" id="thenOther"><br>'; }
