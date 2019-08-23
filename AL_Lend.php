@@ -19,6 +19,10 @@
 	<!-- Drop down should be a list of companies, and then an Other: -->
 
 	<!-- Should align this within the page -->
+	Type of equipment: 
+	<select class="twenty" style="height: 30px;">
+	<option>Ski</option><option>Snowboard</option><option>Surf</option><option>Other</option>
+	</select><br>
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
 	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent"><br>
