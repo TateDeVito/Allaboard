@@ -21,10 +21,10 @@
 	the thing that has stood in my way is the costly process of buying or renting equipment. 
 	<br><br>
 	Renting equipment was no fun and the equipment was never high quality; buying equipment was super expensive. 
-	I thought it might be interesting if I built a platform to help both parties. 
+	I thought it might be interesting if I tried building a platform to help both parties. 
 	<br><br>
 	With <b> allaboard</b>, people who have paid a lot of money for equipment can make some money back by 
-	letting others use it in the off season. The renting pool of people can test and use high 
+	letting others use it in the offseason. The renting pool of people can test and use high 
 	quality equipment from the first group! Win win. 
 	<br><br>
 	A board for everyone (all a board). All aboard. 
