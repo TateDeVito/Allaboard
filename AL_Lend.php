@@ -22,7 +22,11 @@
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
 	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent"><br>
-	Photos upload: 	<!-- To add in -->
+	<!-- Users add a photo here  -->
+	<!-- Although currently works as a submit... -->
+	Photos upload: <input type="image" id="pic" name="pic">	
+	<br>
+
 	<b><p style='color : red' id="error"></p></b>	
 	<!-- Button triggers JavaScript form validation -->
 	<input class="blackbtn" type="submit" value="List my item" id="list" onclick="return itemCheck()">
