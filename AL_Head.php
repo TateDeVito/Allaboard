@@ -5,5 +5,5 @@
 	<a href="AL_Lend.php">Lend</a>
 	<!-- <a class="top" href="AL_About.php">About</a> -->
 	<a href="AL_Col.php">College Captains</a>
-	<a class="top" href="AL_Profile.php">My Profile</a>
+	<a href="AL_Profile.php">My Profile</a>
 	</h1> 
