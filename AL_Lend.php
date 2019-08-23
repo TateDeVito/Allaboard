@@ -20,9 +20,10 @@
 
 	<!-- Should align this within the page -->
 	Type of equipment: 
-	<select class="twenty" style="height: 30px;">
+	<select class="twenty" style="height: 30px; margin-bottom: 15px">
 	<option>Ski</option><option>Snowboard</option><option>Surf</option><option>Other</option>
-	</select><br>
+	</select><br> 
+	<!-- If other - input to the right -->
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
 	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent"><br>
