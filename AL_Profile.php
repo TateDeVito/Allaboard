@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
+</head>
 <?php
 	include 'AL_Head.php';
 	

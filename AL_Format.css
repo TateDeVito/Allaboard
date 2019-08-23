@@ -9,7 +9,7 @@ body{
 }
 
 h1 {
-	background: #2bd5ff;
+	background: black;
 	color: white;
 	padding: 5px 20px 5px 10px;
 	font-size: 35px;
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-	color: blue;
+	background-color: blue;
 }
 
 img {
