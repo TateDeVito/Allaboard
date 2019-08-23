@@ -20,9 +20,19 @@
 
 	<!-- Should align this within the page -->
 	Type of equipment: 
-	<select class="twenty" style="height: 30px; margin-bottom: 15px">
+	<select onchange="other()" class="twenty" style="height: 30px; margin-bottom: 15px" id="type">
 	<option>Ski</option><option>Snowboard</option><option>Surf</option><option>Other</option>
-	</select><br> 
+	</select><br>
+	<div id="ifOther"></div>
+	<script> 
+		var type = document.getElementById('type');		
+		function other() {
+			if(type.value == 'Other') { document.getElementById('ifOther').innerHTML = 
+			'Give other type here: <input class="twenty" id="thenOther"><br>'; }
+			else { document.getElementById('ifOther').innerHTML = ''; }
+		} 
+	</script>
+
 	<!-- If other - input to the right -->
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
