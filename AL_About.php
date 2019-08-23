@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <header>
+<title>About allaboard</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
-<title>About</title>
 <?php
 	include 'AL_Head.php';	
 ?>

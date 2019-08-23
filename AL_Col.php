@@ -2,8 +2,8 @@
 <html>
 
 <header>
+<title>College programs</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
-<title>About</title>
 <?php
 	include 'AL_Head.php';
 ?>

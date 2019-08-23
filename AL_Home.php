@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <header>
-<link rel="stylesheet" type="text/css" href="AL_Format.css">
 <title>Home</title>
+<link rel="stylesheet" type="text/css" href="AL_Format.css">
 <?php
 	include 'AL_Head.php';
 ?>

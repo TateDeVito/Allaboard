@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="AL_Format.css">
-<head>
-<script type="text/javascript" src="scripts/LendScript.js"></script>
 
+<header>
+<title>Lending</title>
+<link rel="stylesheet" type="text/css" href="AL_Format.css">
+<script type="text/javascript" src="scripts/LendScript.js"></script>
 <?php 
 	include 'AL_Head.php';
 ?>
-
-</head>
+</header>
 
 <body>
 

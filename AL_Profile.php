@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
+
+<header>
+<title>Profile</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
 <?php
 	include 'AL_Head.php';
 ?>
-</head>
+</header>
 
 <body>
 	</b></p>

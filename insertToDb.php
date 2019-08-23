@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
+
+<header>
+<title>Equipment submissions</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
+</header>
+
 <body>
 <center>
 
