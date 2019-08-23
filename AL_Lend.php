@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
 <head>
-<!-- <script type="text/javascript" src="scripts/LendScript.js"></script> -->
+<script type="text/javascript" src="scripts/LendScript.js"></script>
 
 <?php 
 	include 'AL_Head.php';

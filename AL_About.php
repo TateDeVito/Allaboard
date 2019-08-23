@@ -17,11 +17,7 @@
 <body>
 	<center>
 	<br>
-	To add: 
-	<ol>
-	<li>Bio</li>
-	<li>Mission</li>
-	<li>Cool images</li>
+	About page
 	<br>
 	</center>
 </body>

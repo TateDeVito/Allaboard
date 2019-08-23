@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
-
+<head>
 <?php
 	include 'AL_Head.php';	
 ?>
+</head>
 
 <body>
 	<center>
-	<br>
-	<form method="POST">
+	<form width=90% method="POST">
 	<p><b>Search (by brand or item name) </b><input type="textbox" name="search" size="50"
-	style="height: 30px; font-size: 30px">
+	style="height: 30px; font-size: 30px"><br>
 	<input class="blackbtn" type="submit" value="Go"></p>
 	
 	<!-- List the results of a search directly on the page -->
@@ -31,9 +31,9 @@
 			$search->execute();
 			$results = $search->fetchAll();
 
-			echo "<br><table width=70%>";
+			echo "<table width=70% style='overflow-x: auto'>";
 			foreach($results as $item) {
-				echo '<td>' 
+				echo '<td class="twenty">' 
 				. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>'; }
 			echo "</table>";
 			}
@@ -42,7 +42,7 @@
 				echo "Sorry that didn't work!";
 			}
 
-			// Close connection
+			// Close connection at termination
 			$db = null;
 		}
 	?>

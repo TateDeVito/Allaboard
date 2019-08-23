@@ -45,7 +45,7 @@
 		// To run the queries on a PDO, we use the exec() method
 		try {
 			$db->exec($insertItem);
-			echo '<b>Successfully added a ' . $brand . " " . $item . " to equipment pool.</b>";
+			echo '<b>Successfully added a(n) ' . $brand . " " . $item . " to equipment pool.</b>";
 			echo '<br><br>Thank you for your submission!';
 		}
 

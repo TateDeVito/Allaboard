@@ -7,15 +7,13 @@
 ?>
 <body>
 	</b></p>
-	<center>
+	<form class="forms" name="login" method="post">
 	<br><b>Log in</b><br>
-	<form name="login" onsubmit="return validateForm() ;" method="post">
 	<br>
-	Username <input class="username" type="text" name="user"></input><br> 
-	Password <input class="password" type="password" name="pass"></input><br><br>	
+	Username <input class="twenty" type="text" name="user"><br> 
+	Password <input class="twenty" type="password" name="pass"><br><br>	
 	<input class="blackbtn" type="submit" name="submit" value="Log in" onclick="validate()">
 	</form>
 	<br><b><a href="AL_NewMemb.html">New here?</a></b><br> 
-	</center>
 </body>
 </html>

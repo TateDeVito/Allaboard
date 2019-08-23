@@ -31,6 +31,10 @@ a {
 	font-size: 18px;
 }
 
+a:hover {
+	color: blue;
+}
+
 img {
 	/* Attempting to make background transparent on all images */
 	background: none;
@@ -42,11 +46,11 @@ input {
 }
 
 td {
-	background-color:#2bd5ff; 
-	border-width: 5px; 
-	text-align: center;			
+	background-color:whitesmoke; 
+	border-width: 5px; 			
 	padding: 15px;
-	font-size: 10px;
+	font-size: 20px;
+	text-align: center;
 }
 
 /* Classes */
@@ -77,6 +81,7 @@ td {
 .twenty {
 	font-size: 20px;
 	height: 20px;
+	width: 10px;
 }
 
 .biglabel {

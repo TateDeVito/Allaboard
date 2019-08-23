@@ -16,13 +16,12 @@
 <body>
 	<center>
 	<b>College Captains Campaign: 
-		The first allaboard member from each college will be named "Pioneer", and the user with the most activity will be named "Captain" (both recognized here). The most active, captain schools will be recognized each month. 
+		The first allaboard member from each college will and earn your school a feature here 
 		</b><br><br>
 			<tr>
 				<td><img src="Images/UVA.png"></td>
 				<td><img src="Images/UPenn.png"></td>
 				<td><img src="Images/W&M.png"></td>
-				<td><img src="Images/UVA.png"></td>
 			</tr>
 			<tr>
 				<th></th>
