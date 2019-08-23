@@ -8,13 +8,6 @@ body{
 	font-size: 30px;
 }
 
-h1 {
-	background: #2bd5ff;
-	color: white;
-	padding: 5px 20px 5px 10px;
-	font-size: 35px;
-}
-
 p {
 	background: white;
 	color: black;
@@ -60,6 +53,13 @@ td {
 }
 
 /* Classes */
+
+.head {
+		background-color: black;
+		color: black;
+		padding: 5px 20px 5px 10px;
+		font-size: 35px;
+}
 
 .bio {
 	background-color: grey;

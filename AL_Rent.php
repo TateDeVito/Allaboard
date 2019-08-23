@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <title>Rentals</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">

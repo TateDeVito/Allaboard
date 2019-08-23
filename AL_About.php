@@ -2,16 +2,14 @@
 <html>
 
 <header>
-<title>About allaboard</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
-<?php
-	include 'AL_Head.php';	
-?>
+<title>Hi!</title>
 </header>
 
-<title>Hi!</title>
-
 <body>
+<?php
+	include 'AL_Head.php';
+?>
 	<center>
 	<p class="bio">
 	Hi!

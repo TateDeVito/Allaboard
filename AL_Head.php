@@ -1,4 +1,4 @@
-	<h1>
+	<h1 class="head" style="background-color: #2bd5ff;">
 	<a style="font-size:33px" href="AL_About.php">allaboard</a>
 	<a href="AL_Home.php">Home</a>
 	<a href="AL_Rent.php">Rent</a>
