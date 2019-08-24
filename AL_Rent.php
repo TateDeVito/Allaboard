@@ -34,8 +34,8 @@
 				// echo "<table style='layout: auto;'>";
 				echo '<div class="gallery">';
 				foreach($results as $item) {
-					echo '<div class="element">' 
-					. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</div>'; 
+					echo '<div class="element"><img style="height: 30px; width: 30px" src=# /><br>
+					<b>' . $item['brand'] . " " . $item['item'] . '</b><br>Price: $' . $item['price'] . '</div>'; 
 				}
 				echo "</div>";
 				}
