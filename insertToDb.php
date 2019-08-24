@@ -24,6 +24,9 @@
 			$brand = $_POST['brand'];
 			// item (varchar 30)
 			$item = $_POST['item'];
+			// type (varchar 30)
+			$sport = $_POST['sport'];
+			if($sport == "Other") { $sport = $_POST['other']; }			
 			// price (varchar 30)
 			// the reason for a varchar is for a name your price element
 			$price = 0;
@@ -42,8 +45,8 @@
 		// If you are using all columns, then you do not need to specify which cols to 
 		// pull from.
 
-		$insertItem = "INSERT INTO `$dbname`(userID,area,brand,item,price,photo)
-		VALUES('$userID','$location','$brand','$item','$price','$photo')";
+		$insertItem = "INSERT INTO `$dbname`(userID,area,brand,item,sport,price,photo)
+		VALUES('$userID','$location','$brand','$item','$sport','$price','$photo')";
 
 		echo "<br><br>"; 
 
