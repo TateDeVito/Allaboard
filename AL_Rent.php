@@ -7,13 +7,12 @@
 	include 'AL_Head.php';	
 ?>
 </head>
-
-<body>
 	<center>
-	<form width=90% method="POST">
-	<p><b>Search (by brand or item name) </b><input otype="textbox" name="search" size="50"
+	<form method="POST">
+	<p><b>Search (keyword) </b><input otype="textbox" name="search"
 	style="height: 30px; font-size: 30px"><br>
 	<!-- <input class="blackbtn" type="submit" value="Go"></p> -->
+	</form>
 	
 	<!-- List the results of a search directly on the page -->
 	<?php
@@ -35,8 +34,8 @@
 				// echo "<table style='layout: auto;'>";
 				echo '<div class="gallery">';
 				foreach($results as $item) {
-					echo '<p class="element">' 
-					. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</p>'; 
+					echo '<div class="element">' 
+					. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</div>'; 
 				}
 				echo "</div>";
 				}

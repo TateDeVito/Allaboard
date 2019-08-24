@@ -1,6 +1,11 @@
+
+	<!-- A  -->
 	<h1 class="head" style="background-color: #2bd5ff;">
-	<a style="font-size:33px" href="AL_About.php">allaboard</a>
-	<a href="AL_Home.php">Home</a>
+	<!-- B --> 
+	<!-- <h1 class="head" style="background: none;"> -->
+
+	<a style="font-size:33px" href="AL_Home.php">allaboard</a>
+	<a href="AL_About.php">About</a>
 	<a href="AL_Rent.php">Rent</a>
 	<a href="AL_Lend.php">Lend</a>
 	<a href=#>Gear Crates</a>
