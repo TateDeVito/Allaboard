@@ -21,16 +21,18 @@
 	<!-- Should align this within the page -->
 	Type of equipment: 
 	<select onchange="other()" class="twenty" style="height: 30px; margin-bottom: 15px" id="sport" name="sport">
+	<option></option>
 	<option>Ski</option><option>Snowboard</option>
 	<option>Surf</option><option>Other</option>
 	</select><br>
-	<div style="color: grey" id="ifOther" name="ifOther"></div>
+	<div class="subtext" id="ifOther" name="ifOther"></div>
+
 	<script> 
 		var sport = document.getElementById('sport');	
 		// Javascript function to put in items that are of nontraditional types 
 		function other() {
 			if(sport.value == 'Other') { document.getElementById('ifOther').innerHTML = 
-			'Give other type here: <input class="twenty" id="other" name="other"><br>'; }
+			'<i>Type sport here: <input class="twenty" id="other" name="other"></i><br>'; }
 			else { document.getElementById('ifOther').innerHTML = ''; }
 		} 
 	</script>
@@ -38,12 +40,24 @@
 	<!-- If other - input to the right -->
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
-	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent"><br>
+	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent">
+	Not sure... <input onchange="namePrice()" style="height: 25px; width: 25px" type="checkbox" id="unknownBox"><br>
+	<div class="subtext" id="noPrice" name="noPrice"></div>
+
+	<script> 
+		var unknownBox = document.getElementById('unknownBox');	
+		// Javascript function to put in items that are of nontraditional types 
+		function namePrice() {
+			if(unknownBox.checked) { document.getElementById('noPrice').innerHTML = 
+			'<i>We will help you find a price!</i><br>'; }
+			else { document.getElementById('noPrice').innerHTML = ''; }
+		} 
+	</script>
+
 	<!-- Users add a photo here  -->
 	<!-- Although currently works as a submit... -->
-	Photos upload: <input type="image" id="pic" name="pic">	
+	Photos: <input type="image" id="pic" name="pic">	
 	<br>
-
 	<b><p style='color : red' id="error"></p></b>	
 	<!-- Button triggers JavaScript form validation -->
 	<input class="blackbtn" type="submit" value="List my item" id="list" onclick="return itemCheck()">

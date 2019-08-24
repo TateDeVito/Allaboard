@@ -73,6 +73,12 @@ input {
 	float: left;
 }
 
+.subtext {
+	color: grey;
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+
 .blackbtn {
 	color: white; 
 	background-color: black; 
