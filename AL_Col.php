@@ -11,7 +11,7 @@
 
 <title>About</title>
 
-<body>
+<body style="background-color: whitesmoke; color: #2bd5ff">
 	<center>
 	<b>College Captains Campaign: 
 		The first allaboard member from each college will and earn your school a feature here 

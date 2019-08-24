@@ -24,6 +24,7 @@
 
 				try {
 				// Queries should match the entries in the search bar on the page
+				// FACTOR IN TYPES
 				$query = "SELECT brand, item, price FROM `$dbname`
 				WHERE brand='$search' or item='$search'";
 
