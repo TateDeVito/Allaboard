@@ -1,6 +1,7 @@
 
 var brand = document.getElementById('brand');
 var item = document.getElementById('item');
+var sport = document.getElementById('sport');
 var error = document.getElementById('error');
 
 // Form conditions
@@ -17,9 +18,10 @@ function itemCheck() {
     }
 
     // No empties allowed
-    if(brand.value == "" || item.value == "") {
+    if(brand.value == "" || item.value == "" || sport.value == "") {
         if(brand.value == "")  { brand.style = 'border-color : red' }
         if(item.value == "")  { item.style = 'border-color : red' }
+        if(sport.value == "")  { sport.style = 'border-color : red' }
         error.textContent = "Form missing element(s)";
         return false;
     }
