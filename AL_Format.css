@@ -37,20 +37,19 @@ input {
 	margin-bottom: 15px;
 }
 
-table {
-	overflow-x: auto;
+/* table {
+	width: 70%
 }
 
 td {
 	background-color:whitesmoke;
 	font-size: 20px; 
-	border-color:#2bd5ff;
-	border-style: solid; 			
-	border-width: 2px; 			
+	border: 2px solid #2bd5ff; 			
 	padding: 20px;
 	margin: 10px;
 	text-align: center;
-}
+	width: 50px;
+} */
 
 /* Classes */
 
@@ -69,6 +68,20 @@ td {
 	padding: 2% 2% 2% 5%;
 	width: 90%;
 	text-align: left;
+}
+
+.gallery {
+	width: 80%;
+	text-align: left;
+}
+
+.element {
+	color: black;
+	background-color: whitesmoke;
+	border: 2px solid black;
+	font-size: 25px;
+	width: 25%;
+	padding: 2px 1px 2px 5px;
 }
 
 .blackbtn {

@@ -32,12 +32,15 @@
 				$search->execute();
 				$results = $search->fetchAll();
 
-				echo "<table width=70% style='overflow-x: auto'>";
+				// echo "<table style='layout: auto;'>";
+				echo '<div class="gallery">';
 				foreach($results as $item) {
-					echo '<td class="twenty">' 
-					. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</td>'; }
-				echo "</table>";
+					echo '<p class="element">' 
+					. $item['brand'] . '<br>' . $item['item'] . '<br> @ $' . $item['price'] . '</p>'; 
 				}
+				echo "</div>";
+				}
+
 
 				catch(PDOException $e) {
 					echo "Sorry that didn't work!";
