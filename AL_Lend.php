@@ -41,7 +41,8 @@
 	Brand: <input class="twenty" type="textbox" id="brand" name="brand"><br>
 	Item name: <input class="twenty" type="textbox" id="item" name="item"><br>
 	Rental price ($): <input class="twenty" type="number" value=20 id="rent" name="rent">
-	Not sure... <input onchange="namePrice()" style="height: 25px; width: 25px" type="checkbox" id="unknownBox"><br>
+	Not sure... <input onchange="namePrice()" style="height: 25px; width: 25px" type="checkbox" id="unknownBox"
+	name="unknownBox"><br>
 	<div class="subtext" id="noPrice" name="noPrice"></div>
 
 	<script> 

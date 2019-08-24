@@ -31,6 +31,7 @@
 			// the reason for a varchar is for a name your price element
 			$price = 0;
 			if(!empty($_POST['rent'])) { $price = $_POST['rent']; }
+			if($_POST['unknownBox']) { $price = "unknown"; }
 			// photo
 			$photo = 0;
 
