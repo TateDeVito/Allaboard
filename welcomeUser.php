@@ -55,7 +55,8 @@
 	echo '</body>';
     echo '</html>';
     
-    // Set up server or cookie to maintain the user's state
+    // SET UP A STATE SO THAT YOU CAN RECORD THE USER INFO
+
 ?>
 
 <br><br>
