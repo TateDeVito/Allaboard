@@ -13,17 +13,17 @@
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		require('Db/connectToDb.php');
         // DB format: 
-        // dbname: users 
+        // table: users 
 			// userID (varchar 20) - primary key
-			$userID = '';
-			// password (varchar 20)
-            $password = '';
+			$userID = $_POST['user'];
+			// pass (varchar 20)
+            $pass = $_POST['pass'];
 			// fname (varchar 30)
-			$fname = '';
+			$fname = $_POST['fname'];
 			// lname (varchar 30)
-            $lname = '';
-            // location?
-            // $location = '';
+            $lname = $_POST['lname'];
+            // area (varchar 30)
+            $area = '';
 
 		// URLs': 
 		// 1.) https://www.w3schools.com/sql/sql_insert.asp
@@ -34,16 +34,16 @@
 		// If you are using all columns, then you do not need to specify which cols to 
 		// pull from.
 
-		$newuser = "INSERT INTO `$dbname`(userID,area,brand,item,sport,price,photo)
-		VALUES('$userID','$location','$brand','$item','$sport','$price','$photo')";
+		$newuser = "INSERT INTO `users`(userID,pass,fname,lname,area)
+		VALUES('$userID', '$pass', '$fname', '$lname', '$area')";
 
 		echo "<br><br>"; 
 
 		// To run the queries on a PDO, we use the exec() method
 		try {
-			$db->exec($insertItem);
-			echo '<b>Successfully added a(n) ' . $brand . " " . $item . " to equipment pool.</b>";
-			echo '<br><br>Thank you for your submission!';
+			$db->exec($newuser);
+			echo '<b>Successfully added user.</b>';
+			echo '<br><br>Welcome <b>' . $userID . '</b>!';
 		}
 
 		catch(PDOException $e) { echo 'Oh no!: ' . $e->getMessage(); }
@@ -53,7 +53,9 @@
 	}
 
 	echo '</body>';
-	echo '</html>';
+    echo '</html>';
+    
+    // Set up server or cookie to maintain the user's state
 ?>
 
 <br><br>

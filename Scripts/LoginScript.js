@@ -1,6 +1,6 @@
 
-var fName = document.getElementById('fName');
-var lName = document.getElementById('lName');
+var fname = document.getElementById('fname');
+var lname = document.getElementById('lname');
 var user = document.getElementById('user');
 var pass = document.getElementById('pass');
 
@@ -13,7 +13,7 @@ var isError = false;
 function signInCheck() {
 
     // Reset styles
-    { fName.style = 'border-color : none'; lName.style = 'border-color : none';
+    { fname.style = 'border-color : none'; lname.style = 'border-color : none';
     user.style = 'border-color : none'; pass.style = 'border-color : none'; 
     errorForm.textContent = ""; userErr.textContent = ""; passErr.textContent = ""; 
     errorForm.textContent = ""; 
@@ -21,9 +21,9 @@ function signInCheck() {
 
     {
     // 1.) No empties allowed
-    if(fName.value == "" || lName.value == "" || user.value == "" || pass.value == "") {
-        if(fName.value == "")  { fName.style = 'border-color : red' }
-        if(lName.value == "")  { lName.style = 'border-color : red' }
+    if(fname.value == "" || lname.value == "" || user.value == "" || pass.value == "") {
+        if(fname.value == "")  { fname.style = 'border-color : red' }
+        if(lname.value == "")  { lname.style = 'border-color : red' }
         if(user.value == "")  { user.style = 'border-color : red' }
         if(pass.value == "")  { pass.style = 'border-color : red' }
         errorForm.textContent = "Form missing element(s)";

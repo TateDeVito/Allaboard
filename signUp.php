@@ -12,10 +12,10 @@
 
 <body>
 <br>
-<form class="forms" action="AL_Home.php" onclick="return signInCheck()" method="POST">
-First Name: <input class="twenty" type="textbox" id="fName" name="fName">
+<form class="forms" action="welcomeUser.php" onclick="return signInCheck()" method="POST">
+First Name: <input class="twenty" type="textbox" id="fname" name="fname">
 <!-- Must not be empty -->
-Last Name: <input class="twenty" type="textbox" id="lName" name="lName"><br>
+Last Name: <input class="twenty" type="textbox" id="lname" name="lname"><br>
 <!-- Must not be empty -->
 Username: <input class="twenty" type="textbox" id="user" name="user"><br>
 <div style="color: red; font-weight: bold" id="userErr"></div>
