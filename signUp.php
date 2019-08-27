@@ -21,8 +21,8 @@ Username: <input class="twenty" type="textbox" id="user" name="user"><br>
 Password: <input class="twenty" type="textbox" id="pass" name="pass">
 <div style="color: red; font-weight: bold" id="passErr"></div>
 <!-- Must be 8-24 characters -->
-<!-- Must have at least one number -->
-<!-- Must have at least one special character -->
+<!-- To add: Must have at least one number -->
+<!-- To add: Must have at least one special character -->
 <br>
 <div style="color: red; font-weight: bold" id="errorForm"></div>
 <br>	
