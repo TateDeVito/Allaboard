@@ -59,11 +59,10 @@
 	<!-- Although currently works as a submit... -->
 	Photos: <input type="image" id="pic" name="pic">	
 	<br>
-	<b><p style='color : red' id="error"></p></b>	
+	<p class="error" style="color: red; font-weight: bold" id="error"></p>	
 	<!-- Button triggers JavaScript form validation -->
 	<input class="blackbtn" type="submit" value="List my item" id="list" onclick="return itemCheck()">
 	</form>	
-
 	</p>
 
 	<!-- If the form successfully makes it through the validation form -->

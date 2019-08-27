@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+<title>Lending</title>
+<link rel="stylesheet" type="text/css" href="AL_Format.css">
+<!-- <script type="text/javascript" src="scripts/LoginScript.js"></script> -->
+</header>
+
+<body>
+<br>
+<form class="forms" action='AL_Home.php' onsubmit="return signInCheck()">
+First Name: <input class="twenty" type="textbox" id="fName" name="fName">
+<!-- Must not be empty -->
+Last Name: <input class="twenty" type="textbox" id="lName" name="lName"><br>
+<!-- Must not be empty -->
+Username: <input class="twenty" type="textbox" id="user" name="user"><br>
+<div style="color: red; font-weight: bold" id="userErr"></div>
+<!-- Must not be empty -->
+<!-- Must not be an existing username -->
+Password: <input class="twenty" type="textbox" id="pass" name="pass">
+<div style="color: red; font-weight: bold" id="passErr"></div>
+<!-- Must be 8-24 characters -->
+<!-- Must have at least one number -->
+<!-- Must have at least one special character -->
+<br>
+<div style="color: red; font-weight: bold" id="errorForm"></div>
+<br>	
+<input class="blackbtn" type="submit" value="Sign up" onclick="return signInCheck()">
+</form>
+
+<script type="text/javascript" src="scripts/LoginScript.js"></script>
+
+</body>
+
+</html>

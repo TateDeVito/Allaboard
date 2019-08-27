@@ -79,6 +79,12 @@ input {
 	padding-bottom: 15px;
 }
 
+/* Having issue for some reason */
+.error {
+	color: red;
+	font-weight: bold;
+}
+
 .blackbtn {
 	color: white; 
 	background-color: black; 
