@@ -4,7 +4,7 @@
 <header>
 <title>Sign up</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
-<!-- <script type="text/javascript" src="scripts/LoginScript.js"></script> -->
+<script type="text/javascript" src="scripts/LoginScript.js"></script>
 <?php 
 	include 'AL_Head.php';
 ?>

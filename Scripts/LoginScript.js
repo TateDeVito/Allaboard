@@ -16,10 +16,10 @@ function signInCheck() {
     { fName.style = 'border-color : none'; lName.style = 'border-color : none';
     user.style = 'border-color : none'; pass.style = 'border-color : none'; 
     errorForm.textContent = ""; userErr.textContent = ""; passErr.textContent = ""; 
-    errorForm.textContent = ""; }
+    errorForm.textContent = ""; 
+    isError = false; }
 
     {
-
     // 1.) No empties allowed
     if(fName.value == "" || lName.value == "" || user.value == "" || pass.value == "") {
         if(fName.value == "")  { fName.style = 'border-color : red' }
@@ -42,12 +42,11 @@ function signInCheck() {
         pass.style = 'border-color : red';
         passErr.textContent = "Password must be 8-24 chars"; 
         isError = true; } 
-
     }
 
     // If there is an error, flag the form and return false
     // otherwise, return true
-    if(isError) { return false; }
-    else { return true; }
-
+    if(isError == true) { return false; }
+    
+    return true;
 }   
