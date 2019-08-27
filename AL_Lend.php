@@ -63,7 +63,6 @@
 	<!-- Button triggers JavaScript form validation -->
 	<input class="blackbtn" type="submit" value="List my item" id="list" onclick="return itemCheck()">
 	</form>	
-	</p>
 
 	<!-- If the form successfully makes it through the validation form -->
 	<!-- Then the newly listed items will be put into a database of listed items -->
