@@ -13,8 +13,8 @@ var isError = false;
 function signInCheck() {
 
     // Reset styles
-    { fname.style = 'border-color : none'; lname.style = 'border-color : none';
-    user.style = 'border-color : none'; pass.style = 'border-color : none'; 
+    { fname.style = 'border-color: none'; lname.style = 'border-color: none';
+    user.style = 'border-color: none'; pass.style = 'border-color: none'; 
     errorForm.textContent = ""; userErr.textContent = ""; passErr.textContent = ""; 
     errorForm.textContent = ""; 
     isError = false; }
@@ -46,7 +46,5 @@ function signInCheck() {
 
     // If there is an error, flag the form and return false
     // otherwise, return true
-    if(isError == true) { return false; }
-    
-    return true;
+    return !isError;
 }   

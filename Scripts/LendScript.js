@@ -4,17 +4,22 @@ var item = document.getElementById('item');
 var sport = document.getElementById('sport');
 var error = document.getElementById('error');
 
+var isError = false;
+
 // Form conditions
 function itemCheck() {
 
-    error.textContent = "";
+    // Reset styles
+    { brand.style = 'border-color: none'; item.style = 'border-color: none';
+    sport.style = 'border-color: none'; error.textContent = ""; 
+    isError = false; }
 
     // No apostraphes allowed
     if(brand.value.includes("'") || item.value.includes("'")) {
         // if(brand.value.includes("'")) { brand.value = brand.value.replace("'",""); }
         // if(item.value.includes("'")) { item.value = item.value.replace("'",""); }
         error.textContent = "Please replace apostraphes (') with empty spaces";        
-        return false;
+        isError = true;
     }
 
     // No empties allowed
@@ -23,9 +28,8 @@ function itemCheck() {
         if(item.value == "")  { item.style = 'border-color : red' }
         if(sport.value == "")  { sport.style = 'border-color : red' }
         error.textContent = "Form missing element(s)";
-        return false;
+        isError = true;
     }
 
-    return true;
-
+    return !isError;
 }   
