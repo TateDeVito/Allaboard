@@ -2,14 +2,14 @@
 <html>
 
 <header>
-<title>Lending</title>
+<title>Sign up</title>
 <link rel="stylesheet" type="text/css" href="AL_Format.css">
 <!-- <script type="text/javascript" src="scripts/LoginScript.js"></script> -->
 </header>
 
 <body>
 <br>
-<form class="forms" action='AL_Home.php' onsubmit="return signInCheck()">
+<form class="forms" action="welcomeUser.php" onclick="return signInCheck()" method="POST">
 First Name: <input class="twenty" type="textbox" id="fName" name="fName">
 <!-- Must not be empty -->
 Last Name: <input class="twenty" type="textbox" id="lName" name="lName"><br>
@@ -28,9 +28,8 @@ Password: <input class="twenty" type="textbox" id="pass" name="pass">
 <br>	
 <input class="blackbtn" type="submit" value="Sign up" onclick="return signInCheck()">
 </form>
+</body>
 
 <script type="text/javascript" src="scripts/LoginScript.js"></script>
-
-</body>
 
 </html>

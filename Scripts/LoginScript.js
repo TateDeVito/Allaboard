@@ -18,6 +18,8 @@ function signInCheck() {
     errorForm.textContent = ""; userErr.textContent = ""; passErr.textContent = ""; 
     errorForm.textContent = ""; }
 
+    {
+
     // 1.) No empties allowed
     if(fName.value == "" || lName.value == "" || user.value == "" || pass.value == "") {
         if(fName.value == "")  { fName.style = 'border-color : red' }
@@ -25,26 +27,26 @@ function signInCheck() {
         if(user.value == "")  { user.style = 'border-color : red' }
         if(pass.value == "")  { pass.style = 'border-color : red' }
         errorForm.textContent = "Form missing element(s)";
-        isError = true;
-    }
+        isError = true; }
 
     // 2.) Username must not exist
     // For testing, this will only trigger if username == username
     if(user.value == "username") {
         user.style = 'border-color : red';
         userErr.textContent = "Username already exists";
-        isError = true;
-    }
+        isError = true; }
 
     // 3.) Password must have one special, one #, and be 8-24 chars
     // For testing, only using 8-24 chars
     if(pass.value.length < 8 || pass.value.length > 24) {
         pass.style = 'border-color : red';
         passErr.textContent = "Password must be 8-24 chars"; 
-        isError = true;
+        isError = true; } 
+
     }
 
     // If there is an error, flag the form and return false
+    // otherwise, return true
     if(isError) { return false; }
     else { return true; }
 
