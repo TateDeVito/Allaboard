@@ -13,7 +13,7 @@
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		require('Db/connectToDb.php');
         // DB format: 
-        // table: users 
+        // Table: users 
 			// userID (varchar 20) - primary key
 			$userID = $_POST['user'];
 			// pass (varchar 20)

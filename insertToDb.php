@@ -15,6 +15,7 @@
 		require('Db/connectToDb.php');
 
 		// DB format: 
+		// Table: equipmentpool 
 			// userID (varchar 20)
 			$userID = 'userID';
 			// location (varchar 20)
@@ -30,7 +31,7 @@
 			// the reason for a varchar is for a name your price element
 			$price = 0;
 			if(!empty($_POST['rent'])) { $price = $_POST['rent']; }
-			if($_POST['unknownBox']) { $price = "unknown"; }
+			if(!empty($_POST['unknownBox'])) { $price = "unknown"; }
 			// photo
 			$photo = 0;
 
@@ -45,7 +46,7 @@
 		// If you are using all columns, then you do not need to specify which cols to 
 		// pull from.
 
-		$insertItem = "INSERT INTO `$dbname`(userID,area,brand,item,sport,price,photo)
+		$insertItem = "INSERT INTO `equipmentpool`(userID,area,brand,item,sport,price,photo)
 		VALUES('$userID','$location','$brand','$item','$sport','$price','$photo')";
 
 		echo "<br><br>"; 
